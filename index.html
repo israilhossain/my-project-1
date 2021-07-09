@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+            background-color: aqua;
+        }
+        .main{
+            width:300px;
+            padding:40px;
+            
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background: bisque;
+            margin:15px 10px;
+            text-align: center;
+            
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .main input[type="text"], .main input[type="email"], .main input[type="password"]{
+            display: block;
+            background: none;
+            margin: 20px auto;
+            border:2px solid greenyellow;
+            padding:14px 10px;
+            width:200px;
+            border-radius: 10px;
+            outline: none;
+            font-weight: bolder;
+            font-size: 1rem;
+            background: lime;
+            
+            transition-property: width;
+            transition-duration: 2s;
+            
+        }
+
+        .main input[type="text"]:focus, .main input[type="email"]:focus, .main input[type="password"]:focus{
+            
+            width:280px;
+            
+        
+        }
+            
+        
+        .main input[type="submit"]{
+            width:100px;
+            padding:13px 5px;
+            margin:10px 0;
+            font-weight: bolder;
+            background: peru;
+            border-radius: 5px;
+            border:none;
+            outline: none;
+            transition-property: width;
+            transition-duration: 2s;
+        }
+
+        .main input[type="submit"]:hover{
+            background: gray;
+            width:130px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Registration Form</h1>
+
+        
+
+            <input type="text" name="" placeholder="First name">
+            <input type="text" name="" placeholder="Last name">
+            <input type="email" name="" placeholder="Email">
+            <input type="text" name="" placeholder="Password">
+
+            <input type="submit" name="" value="Registration">
+        
+    </div>
+</body>
+</html>
